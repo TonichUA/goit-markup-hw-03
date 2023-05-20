@@ -13,11 +13,12 @@ body {
 /* header */
 .header {
   margin: 0 auto;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-list {
   display: flex;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   gap: 40px;
   margin-right: 332px;
 }
@@ -26,6 +27,7 @@ body {
 }
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
 .list {
@@ -46,8 +48,9 @@ body {
   text-transform: uppercase;
 
   color: #4d5ae5;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 76px;
 }
 
 .header-logo-sekond-part {
@@ -61,9 +64,11 @@ body {
   text-transform: uppercase;
 
   color: var(--title-color);
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 76px;
+}
+.header-item {
 }
 
 .header-item-link {
@@ -74,8 +79,8 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--title-color);
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-item-link:active,
 .header-item-link:hover,
@@ -86,8 +91,8 @@ body {
 .header-address {
   font-style: normal;
 
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-address-list {
   display: flex;
@@ -102,6 +107,12 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--text-color);
+}
+
+.header-address-item {
+  display: flex;
+  margin: 0 auto;
+  width: 151px;
 }
 
 .header-address-link:active,
@@ -133,6 +144,7 @@ body {
   color: #ffffff;
   margin-bottom: 44px;
   width: 496px;
+  max-width: 496px;
 }
 
 .button {
@@ -140,7 +152,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
+  min-width: 169px;
+  height: 56px;
   letter-spacing: 0.04em;
 
   color: #ffffff;
@@ -150,6 +163,7 @@ body {
   padding: 16px 32px 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 .button:hover,
 .button:focus {
@@ -244,7 +258,7 @@ body {
 .team-title-top {
   font-size: 36px;
   line-height: 1.11;
-
+  border-radius: 0px 0px 4px 4px;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -300,10 +314,15 @@ body {
 
   color: #f4f4fd;
 }
-.logo-container {
-  margin-bottom: 18px;
-}
 
+.logo link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.footer-logo-sekond-part {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
@@ -336,20 +355,20 @@ body {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.portfolio-hero-item {
-  display: flex;
-  margin: 0 auto;
-  gap: 24px;
-}
 
-.portfolio-buttoms-container {
-  margin-bottom: 72px;
-}
 .portfolio-hero-list {
   display: flex;
   margin: 0 auto;
-
+  justify-content: center;
+  gap: 24px;
   width: 586px;
+  margin-bottom: 72px;
+}
+
+.portfolio-hero-item {
+  /* display: flex;
+  margin: 0 auto;
+  gap: 24px; */
 }
 
 .portfolio-hero-btn {
@@ -367,24 +386,27 @@ body {
   cursor: pointer;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  padding: 12px 24px 12px 24px;
+  padding: 12px 24px;
 }
 .portfolio-hero-btn:hover,
 .portfolio-hero-btn:focus {
   color: #ffffff;
   background: var(--second-btn-color);
+  border: 1px solid transparent;
 }
 .portfolio-about-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-about-item {
   background: #ffffff;
+  width: calc((100% - 48px) / 3);
 
-  width: 360px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -394,7 +416,9 @@ body {
   margin-bottom: 48px;
 }
 .portfolio-title-text {
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-about-title {
