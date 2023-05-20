@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-nav">
           <a class="logo link" href="./index.html"
             >Web<span class="header-logo-sekond-part link">Studio</span></a
@@ -61,7 +61,7 @@
     <main>
       <!-- blok-hero -->
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="button" type="button">Order Service</button>
         </div>
@@ -72,32 +72,40 @@
           <h2 hidden class="visually-hidden">features</h2>
           <ul class="quality-list list">
             <li class="quality-item">
-              <h3 class="quality-title">Strategy</h3>
-              <p class="quality-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
+              <div class="quality-container">
+                <h3 class="quality-title">Strategy</h3>
+                <p class="quality-text">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </div>
             </li>
             <li class="quality-item">
-              <h3 class="quality-title">Punctuality</h3>
-              <p class="quality-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
+              <div class="quality-container">
+                <h3 class="quality-title">Punctuality</h3>
+                <p class="quality-text">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </div>
             </li>
             <li class="quality-item">
-              <h3 class="quality-title">Diligence</h3>
-              <p class="quality-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
+              <div class="quality-container">
+                <h3 class="quality-title">Diligence</h3>
+                <p class="quality-text">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </div>
             </li>
             <li class="quality-item">
-              <h3 class="quality-title">Technologies</h3>
-              <p class="quality-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
+              <div class="quality-container">
+                <h3 class="quality-title">Technologies</h3>
+                <p class="quality-text">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -147,8 +155,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="team-title">Mark Guerrero</h3>
-              <p class="team-text">Product Designer</p>
+              <div class="team-title-text">
+                <h3 class="team-title">Mark Guerrero</h3>
+                <p class="team-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -157,8 +167,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="team-title">Tom Ford</h3>
-              <p class="team-text">Frontend Developer</p>
+              <div class="team-title-text">
+                <h3 class="team-title">Tom Ford</h3>
+                <p class="team-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -167,8 +179,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="team-title">Camila Garcia</h3>
-              <p class="team-text">Marketing</p>
+              <div class="team-title-text">
+                <h3 class="team-title">Camila Garcia</h3>
+                <p class="team-text">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -178,8 +192,10 @@
                 height="260"
               />
 
-              <h3 class="team-title">Daniel Wilson</h3>
-              <p class="team-text">UI Designer</p>
+              <div class="team-title-text">
+                <h3 class="team-title">Daniel Wilson</h3>
+                <p class="team-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -187,9 +203,11 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="logo link" href="./index.html"
-          >Web<span class="footer-logo-sekond-part">Studio</span></a
-        >
+        <div class="logo-container">
+          <a class="logo link" href="./index.html"
+            >Web<span class="footer-logo-sekond-part">Studio</span></a
+          >
+        </div>
         <p class="footer-text">
           Increase the flow of customers and sales for your business with
           digital marketing & growth solutions.
