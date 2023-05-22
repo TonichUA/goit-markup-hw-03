@@ -99,7 +99,6 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
-  margin-right: 332px;
 }
 .header-item-link {
   font-weight: 500;
